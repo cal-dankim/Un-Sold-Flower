@@ -1,20 +1,9 @@
-import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { SlidersHorizontal, MapPin, ChevronRight, ArrowRight } from 'lucide-react';
+import { MapPin, ArrowRight } from 'lucide-react';
 import { SHOPS, FLOWERS } from '../data';
 
 const HomePage = () => {
     const navigate = useNavigate();
-    const [scrolled, setScrolled] = useState(false);
-
-    // Handle scroll for sticky header
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 10);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
 
     // Use a refined palette for market visual identity if no real image
     const getGradient = (idx: number) => {

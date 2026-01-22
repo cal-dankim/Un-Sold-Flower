@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Search as SearchIcon, X, Filter, ChevronDown } from 'lucide-react';
+import { Search as SearchIcon, X, ChevronDown } from 'lucide-react';
 import { FLOWERS, SHOPS } from '../data';
 
 const SearchPage = () => {

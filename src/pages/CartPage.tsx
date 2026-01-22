@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Minus, Plus, ArrowLeft, Leaf, Store, Truck, Info } from 'lucide-react';
+import { Minus, Plus, ArrowLeft, Leaf, Store, Info } from 'lucide-react';
 
 interface CartItem {
     id: number;

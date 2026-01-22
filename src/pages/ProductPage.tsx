@@ -6,7 +6,7 @@ import { FLOWERS, SHOPS } from '../data';
 const ProductPage = () => {
     const { id } = useParams();
     const navigate = useNavigate();
-    const [activeImage, setActiveImage] = useState(0);
+    // const [activeImage, setActiveImage] = useState(0); // Removed unused
 
     // Parse ID
     const flowerId = parseInt(id || '1');
@@ -75,7 +75,7 @@ const ProductPage = () => {
             {/* Image Viewer */}
             <div className="relative w-full aspect-square bg-gray-200 overflow-hidden">
                 <img
-                    src={images[activeImage]}
+                    src={images[0]} // fixed to 0 since activeImage is removed
                     alt={flower.name}
                     className="w-full h-full object-cover animate-fade-in"
                 />
